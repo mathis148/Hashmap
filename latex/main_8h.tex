@@ -1,0 +1,53 @@
+\hypertarget{main_8h}{}\doxysection{main.\+h File Reference}
+\label{main_8h}\index{main.h@{main.h}}
+{\ttfamily \#include \char`\"{}Data\+Type/hashmap.\+h\char`\"{}}\newline
+Include dependency graph for main.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8h_aa8e402a61f589683a3cf1a8dccb413ad}{S\+U\+C\+E\+SS}}~\char`\"{}Oui\char`\"{}
+\item 
+\#define \mbox{\hyperlink{main_8h_a8fe83ac76edc595f6b98cd4a4127aed5}{E\+R\+R\+OR}}~\char`\"{}Non\char`\"{}
+\item 
+\#define \mbox{\hyperlink{main_8h_acd8fbcbd8fe4e2b3abc9cb31cf6a125f}{B\+T\+\_\+\+A\+D\+D\+\_\+\+HM}}(map,  key,  value)~printf(\char`\"{}Ajout de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a06a4def27abe00bddf1a0bcaed71a469}{add\+HM}}(map, key, value)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);
+\item 
+\#define \mbox{\hyperlink{main_8h_ac686ffceb4d28817d149ec137387734d}{B\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+HM}}(map,  key)~printf(\char`\"{}Supression de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a29565de8feab252c53044c019a0a1fa7}{remove\+HM}}(map, key)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);
+\item 
+\#define \mbox{\hyperlink{main_8h_a1e907a23ad905c837d042a3bac7d6c5a}{B\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+HM}}(map,  key,  new\+Value)~printf(\char`\"{}Mise à joure de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a84955423ee71d8a18a6e9ac3fe043b14}{update\+HM}}(map, key, new\+Value)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8h_acd8fbcbd8fe4e2b3abc9cb31cf6a125f}\label{main_8h_acd8fbcbd8fe4e2b3abc9cb31cf6a125f}} 
+\index{main.h@{main.h}!BT\_ADD\_HM@{BT\_ADD\_HM}}
+\index{BT\_ADD\_HM@{BT\_ADD\_HM}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{BT\_ADD\_HM}{BT\_ADD\_HM}}
+{\footnotesize\ttfamily \#define B\+T\+\_\+\+A\+D\+D\+\_\+\+HM(\begin{DoxyParamCaption}\item[{}]{map,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})~printf(\char`\"{}Ajout de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a06a4def27abe00bddf1a0bcaed71a469}{add\+HM}}(map, key, value)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);}
+
+\mbox{\Hypertarget{main_8h_ac686ffceb4d28817d149ec137387734d}\label{main_8h_ac686ffceb4d28817d149ec137387734d}} 
+\index{main.h@{main.h}!BT\_REMOVE\_HM@{BT\_REMOVE\_HM}}
+\index{BT\_REMOVE\_HM@{BT\_REMOVE\_HM}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{BT\_REMOVE\_HM}{BT\_REMOVE\_HM}}
+{\footnotesize\ttfamily \#define B\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+HM(\begin{DoxyParamCaption}\item[{}]{map,  }\item[{}]{key }\end{DoxyParamCaption})~printf(\char`\"{}Supression de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a29565de8feab252c53044c019a0a1fa7}{remove\+HM}}(map, key)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);}
+
+\mbox{\Hypertarget{main_8h_a1e907a23ad905c837d042a3bac7d6c5a}\label{main_8h_a1e907a23ad905c837d042a3bac7d6c5a}} 
+\index{main.h@{main.h}!BT\_UPDATE\_HM@{BT\_UPDATE\_HM}}
+\index{BT\_UPDATE\_HM@{BT\_UPDATE\_HM}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{BT\_UPDATE\_HM}{BT\_UPDATE\_HM}}
+{\footnotesize\ttfamily \#define B\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+HM(\begin{DoxyParamCaption}\item[{}]{map,  }\item[{}]{key,  }\item[{}]{new\+Value }\end{DoxyParamCaption})~printf(\char`\"{}Mise à joure de \%s réussit ? \%s\textbackslash{}n\char`\"{}, key, \mbox{\hyperlink{hashmap_8h_a84955423ee71d8a18a6e9ac3fe043b14}{update\+HM}}(map, key, new\+Value)==true ? S\+U\+C\+E\+S\+S\+:\+E\+R\+R\+OR);}
+
+\mbox{\Hypertarget{main_8h_a8fe83ac76edc595f6b98cd4a4127aed5}\label{main_8h_a8fe83ac76edc595f6b98cd4a4127aed5}} 
+\index{main.h@{main.h}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \#define E\+R\+R\+OR~\char`\"{}Non\char`\"{}}
+
+\mbox{\Hypertarget{main_8h_aa8e402a61f589683a3cf1a8dccb413ad}\label{main_8h_aa8e402a61f589683a3cf1a8dccb413ad}} 
+\index{main.h@{main.h}!SUCESS@{SUCESS}}
+\index{SUCESS@{SUCESS}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{SUCESS}{SUCESS}}
+{\footnotesize\ttfamily \#define S\+U\+C\+E\+SS~\char`\"{}Oui\char`\"{}}
+

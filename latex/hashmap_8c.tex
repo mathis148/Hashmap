@@ -1,0 +1,88 @@
+\hypertarget{hashmap_8c}{}\doxysection{hashmap.\+c File Reference}
+\label{hashmap_8c}\index{hashmap.c@{hashmap.c}}
+{\ttfamily \#include \char`\"{}Data\+Type/hashmap.\+h\char`\"{}}\newline
+Include dependency graph for hashmap.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} \mbox{\hyperlink{hashmap_8c_a4483f7ec0165cbc7014d5d5b6d453285}{create\+Hash\+Map}} ()
+\item 
+bool \mbox{\hyperlink{hashmap_8c_a06a4def27abe00bddf1a0bcaed71a469}{add\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map, char $\ast$key, int value)
+\item 
+int $\ast$ \mbox{\hyperlink{hashmap_8c_afc953fb6f7bed395682a306e8c1b09f0}{get\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map, char $\ast$key)
+\item 
+bool \mbox{\hyperlink{hashmap_8c_a29565de8feab252c53044c019a0a1fa7}{remove\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map, char $\ast$key)
+\item 
+bool \mbox{\hyperlink{hashmap_8c_a84955423ee71d8a18a6e9ac3fe043b14}{update\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map, char $\ast$key, int new\+Value)
+\item 
+int \mbox{\hyperlink{hashmap_8c_a9fe8a2473738197c4126f04cd2064bb3}{size\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map)
+\item 
+void \mbox{\hyperlink{hashmap_8c_a5ab50b47b0d92cffe443a2f610f67826}{parcour\+Infixe}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map)
+\item 
+void \mbox{\hyperlink{hashmap_8c_ab1dd702fbdc31cbd14aa1354cacb1fa0}{destroy\+HM}} (\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} map)
+\item 
+unsigned long \mbox{\hyperlink{hashmap_8c_ab2717823661faca94414c0a0cbb44903}{turn\+To\+Hash}} (char $\ast$key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{hashmap_8c_a06a4def27abe00bddf1a0bcaed71a469}\label{hashmap_8c_a06a4def27abe00bddf1a0bcaed71a469}} 
+\index{hashmap.c@{hashmap.c}!addHM@{addHM}}
+\index{addHM@{addHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{addHM()}{addHM()}}
+{\footnotesize\ttfamily bool add\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Ajoute un couple key, value a la hashmap Retourne true si ma valeur a pu être ajouté, false sinon \mbox{\Hypertarget{hashmap_8c_a4483f7ec0165cbc7014d5d5b6d453285}\label{hashmap_8c_a4483f7ec0165cbc7014d5d5b6d453285}} 
+\index{hashmap.c@{hashmap.c}!createHashMap@{createHashMap}}
+\index{createHashMap@{createHashMap}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{createHashMap()}{createHashMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}} create\+Hash\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hashmap_8c_ab1dd702fbdc31cbd14aa1354cacb1fa0}\label{hashmap_8c_ab1dd702fbdc31cbd14aa1354cacb1fa0}} 
+\index{hashmap.c@{hashmap.c}!destroyHM@{destroyHM}}
+\index{destroyHM@{destroyHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{destroyHM()}{destroyHM()}}
+{\footnotesize\ttfamily void destroy\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hashmap_8c_afc953fb6f7bed395682a306e8c1b09f0}\label{hashmap_8c_afc953fb6f7bed395682a306e8c1b09f0}} 
+\index{hashmap.c@{hashmap.c}!getHM@{getHM}}
+\index{getHM@{getHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{getHM()}{getHM()}}
+{\footnotesize\ttfamily int$\ast$ get\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hashmap_8c_a5ab50b47b0d92cffe443a2f610f67826}\label{hashmap_8c_a5ab50b47b0d92cffe443a2f610f67826}} 
+\index{hashmap.c@{hashmap.c}!parcourInfixe@{parcourInfixe}}
+\index{parcourInfixe@{parcourInfixe}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{parcourInfixe()}{parcourInfixe()}}
+{\footnotesize\ttfamily void parcour\+Infixe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hashmap_8c_a29565de8feab252c53044c019a0a1fa7}\label{hashmap_8c_a29565de8feab252c53044c019a0a1fa7}} 
+\index{hashmap.c@{hashmap.c}!removeHM@{removeHM}}
+\index{removeHM@{removeHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{removeHM()}{removeHM()}}
+{\footnotesize\ttfamily bool remove\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+Supprime de map la valeur key Retourne true si la valeur a été retiré faux sinon La valeur feux peut être retourner dans deux cas \+:
+\begin{DoxyItemize}
+\item La valeur n\textquotesingle{}a pas été trouvé
+\item map ou key ont pour valeur N\+U\+LL 
+\end{DoxyItemize}\mbox{\Hypertarget{hashmap_8c_a9fe8a2473738197c4126f04cd2064bb3}\label{hashmap_8c_a9fe8a2473738197c4126f04cd2064bb3}} 
+\index{hashmap.c@{hashmap.c}!sizeHM@{sizeHM}}
+\index{sizeHM@{sizeHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{sizeHM()}{sizeHM()}}
+{\footnotesize\ttfamily int size\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hashmap_8c_ab2717823661faca94414c0a0cbb44903}\label{hashmap_8c_ab2717823661faca94414c0a0cbb44903}} 
+\index{hashmap.c@{hashmap.c}!turnToHash@{turnToHash}}
+\index{turnToHash@{turnToHash}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{turnToHash()}{turnToHash()}}
+{\footnotesize\ttfamily unsigned long turn\+To\+Hash (\begin{DoxyParamCaption}\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+Ici, ca l\textquotesingle{}opération est bidon, et peux le rester si on s\textquotesingle{}en fout de l\textquotesingle{}efficacité\mbox{\Hypertarget{hashmap_8c_a84955423ee71d8a18a6e9ac3fe043b14}\label{hashmap_8c_a84955423ee71d8a18a6e9ac3fe043b14}} 
+\index{hashmap.c@{hashmap.c}!updateHM@{updateHM}}
+\index{updateHM@{updateHM}!hashmap.c@{hashmap.c}}
+\doxysubsubsection{\texorpdfstring{updateHM()}{updateHM()}}
+{\footnotesize\ttfamily bool update\+HM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{hashmap_8h_ae265cf37ebbd6d5058c764e637d0d58a}{p\+Map}}}]{map,  }\item[{char $\ast$}]{key,  }\item[{int}]{new\+Value }\end{DoxyParamCaption})}
+
+Change la valeur de key Retourn true si la valeur a été modifié, false sinon 

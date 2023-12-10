@@ -1,0 +1,79 @@
+\hypertarget{listechainee_8c}{}\doxysection{listechainee.\+c File Reference}
+\label{listechainee_8c}\index{listechainee.c@{listechainee.c}}
+{\ttfamily \#include \char`\"{}Data\+Type/listechainee.\+h\char`\"{}}\newline
+Include dependency graph for listechainee.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} \mbox{\hyperlink{listechainee_8c_a6b2ace0bbd6bc25a96d0f20bc5cf4423}{creationchainon}} (char $\ast$key, int value)
+\begin{DoxyCompactList}\small\item\em Fonction permetant de creer un chainon d\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} \mbox{\hyperlink{listechainee_8c_a5e63bf8836dd5ad4c18ba1525b225604}{insertfin}} (\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} pliste, char $\ast$key, int value)
+\begin{DoxyCompactList}\small\item\em Insert un nouveau chainon à la fin de la liste en parametre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{listechainee_8c_a13eb32fdae245695c25e0e5bd5f023ef}{insert\+Unique}} (\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$pliste, char $\ast$key, int value)
+\item 
+int \mbox{\hyperlink{listechainee_8c_a1dac7502ecd16fca17eec75825190dc2}{retirer\+Chainon}} (\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$pliste, char $\ast$key)
+\item 
+void \mbox{\hyperlink{listechainee_8c_a0be2fe483a43f41f3460f89636bf1956}{retirer\+Debut}} (\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$pliste)
+\item 
+void \mbox{\hyperlink{listechainee_8c_a89f08435abef4f8e7ac1c379d392a2fa}{traiter\+Liste}} (\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} pliste, char separator)
+\begin{DoxyCompactList}\small\item\em Affiche tous les chainons de la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{listechainee_8c_a6b2ace0bbd6bc25a96d0f20bc5cf4423}\label{listechainee_8c_a6b2ace0bbd6bc25a96d0f20bc5cf4423}} 
+\index{listechainee.c@{listechainee.c}!creationchainon@{creationchainon}}
+\index{creationchainon@{creationchainon}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{creationchainon()}{creationchainon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} creationchainon (\begin{DoxyParamCaption}\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Fonction permetant de creer un chainon d\textquotesingle{}une liste. 
+
+\mbox{\Hypertarget{listechainee_8c_a5e63bf8836dd5ad4c18ba1525b225604}\label{listechainee_8c_a5e63bf8836dd5ad4c18ba1525b225604}} 
+\index{listechainee.c@{listechainee.c}!insertfin@{insertfin}}
+\index{insertfin@{insertfin}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{insertfin()}{insertfin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} insertfin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}}}]{pliste,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Insert un nouveau chainon à la fin de la liste en parametre. 
+
+Nous parcourons la liste tant qu\textquotesingle{}il y a des suivant
+
+S\textquotesingle{}il n\textquotesingle{}y en a plus nous en creons un\mbox{\Hypertarget{listechainee_8c_a13eb32fdae245695c25e0e5bd5f023ef}\label{listechainee_8c_a13eb32fdae245695c25e0e5bd5f023ef}} 
+\index{listechainee.c@{listechainee.c}!insertUnique@{insertUnique}}
+\index{insertUnique@{insertUnique}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{insertUnique()}{insertUnique()}}
+{\footnotesize\ttfamily int insert\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$}]{pliste,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Insert à la fin d\textquotesingle{}une liste un couple clef, valeur si aucune valeur déjà présente possède la même clef Retourne \+: 0 si la valeur à été ajouté 1 si elle existe déjà 2 si pliste vaut null Nous parcourons la liste tant qu\textquotesingle{}il y a des suivant et que les clefs sont différente
+
+On regarde si la raison de l\textquotesingle{}arret de la boucle est \+: les clefs sont identique
+
+S\textquotesingle{}il n\textquotesingle{}y en a plus nous en creons un\mbox{\Hypertarget{listechainee_8c_a1dac7502ecd16fca17eec75825190dc2}\label{listechainee_8c_a1dac7502ecd16fca17eec75825190dc2}} 
+\index{listechainee.c@{listechainee.c}!retirerChainon@{retirerChainon}}
+\index{retirerChainon@{retirerChainon}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{retirerChainon()}{retirerChainon()}}
+{\footnotesize\ttfamily int retirer\+Chainon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$}]{pliste,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+Supprime un chainon en fontion de sa clef Retourne \+: 0 si la valeur a bien été supprimé 1 si elle n\textquotesingle{}a pas été trouvé 2 si pliste vaut N\+U\+LL 3 si key vaut N\+U\+LL Cas 1 \+: on est à la fin, on a pas trouvé, on ne peux pas retirer
+
+Cas 2 \+: on a trouvé\mbox{\Hypertarget{listechainee_8c_a0be2fe483a43f41f3460f89636bf1956}\label{listechainee_8c_a0be2fe483a43f41f3460f89636bf1956}} 
+\index{listechainee.c@{listechainee.c}!retirerDebut@{retirerDebut}}
+\index{retirerDebut@{retirerDebut}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{retirerDebut()}{retirerDebut()}}
+{\footnotesize\ttfamily void retirer\+Debut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}} $\ast$}]{pliste }\end{DoxyParamCaption})}
+
+Supprime le premier chainon Ne fait rien si pliste vaut N\+U\+LL ou si la liste est déjà vide \mbox{\Hypertarget{listechainee_8c_a89f08435abef4f8e7ac1c379d392a2fa}\label{listechainee_8c_a89f08435abef4f8e7ac1c379d392a2fa}} 
+\index{listechainee.c@{listechainee.c}!traiterListe@{traiterListe}}
+\index{traiterListe@{traiterListe}!listechainee.c@{listechainee.c}}
+\doxysubsubsection{\texorpdfstring{traiterListe()}{traiterListe()}}
+{\footnotesize\ttfamily void traiter\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listechainee_8h_aee94ea54e8c035375a1875a35e6ac0d9}{p\+Chainon}}}]{pliste,  }\item[{char}]{separator }\end{DoxyParamCaption})}
+
+
+
+Affiche tous les chainons de la liste. 
+

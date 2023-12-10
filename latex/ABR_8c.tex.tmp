@@ -1,0 +1,165 @@
+\hypertarget{ABR_8c}{}\doxysection{A\+B\+R.\+c File Reference}
+\label{ABR_8c}\index{ABR.c@{ABR.c}}
+{\ttfamily \#include \char`\"{}Data\+Type/\+A\+B\+R.\+h\char`\"{}}\newline
+Include dependency graph for A\+B\+R.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} \mbox{\hyperlink{ABR_8c_aa566ca95fe487cc15c6c1103f13b38df}{creer\+Arbre}} (unsigned long hash, char $\ast$key, int value)
+\begin{DoxyCompactList}\small\item\em Fonction permetant de creer le noeud d\textquotesingle{}un arbre et de retourner son adresse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ABR_8c_a6b6a162f7fd1ab87313529724855f3ba}{ajouter\+\_\+fg}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a, unsigned long hash, char $\ast$key, int value)
+\begin{DoxyCompactList}\small\item\em Ajoute un fils gauche au chainon mis en parametre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ABR_8c_acc77563e81a137bd17eb93ae6b76f366}{ajouter\+\_\+fd}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a, unsigned long hash, char $\ast$key, int value)
+\begin{DoxyCompactList}\small\item\em Ajoute un fils droit au chainon mis en parametre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ABR_8c_a56a5ef99b4641a95e0b6508042e9f00d}{insertion\+\_\+\+A\+BR}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} $\ast$a\+Pt, unsigned long hash, char $\ast$key, int value)
+\item 
+int \mbox{\hyperlink{ABR_8c_a11739bb4e98cd8d6ccb6b30ff2425530}{supression\+\_\+hash\+\_\+\+A\+BR}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} $\ast$a\+Pt, unsigned long hash, char $\ast$key)
+\item 
+\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} \mbox{\hyperlink{ABR_8c_a942fd6bea8d822c57cc952ed353484dd}{supprimer\+Noeud}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\item 
+bool \mbox{\hyperlink{ABR_8c_a8ac8dc0fe9ede8a6d801dae5b0a0b7b1}{existe\+\_\+fg}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}existance d\textquotesingle{}un fils gauche. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{ABR_8c_a60a1f0791769bd6d9ca8c4830b2b3853}{existe\+\_\+fd}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}existance d\textquotesingle{}un fils droit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ABR_8c_abddfd28e64ef17484ab2d964932de6a0}{traiter\+\_\+noeud}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\begin{DoxyCompactList}\small\item\em Affiche un noeud specifique de l\textquotesingle{}arbre de la meme maniere qu\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ABR_8c_ac5ef8ef64f1aa1aba56e32ed4f98664b}{parcour\+\_\+infixe}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\begin{DoxyCompactList}\small\item\em Fonction permetant de retourner les valeurs de l\textquotesingle{}arbre de façon croissante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ABR_8c_a8b97b1431160ee00d9fd272405dc20f1}{parcour\+\_\+infixe\+\_\+debug}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\begin{DoxyCompactList}\small\item\em Fonction permetant de retourner les valeurs de l\textquotesingle{}arbre de façon croissante. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{ABR_8c_af433ce40199c7b9808834be39cb3b85d}{chercher\+Hash}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a, unsigned long hash, char $\ast$key)
+\item 
+void \mbox{\hyperlink{ABR_8c_ac52400bec0a00dcbb756bf91b24ae2a4}{desteroy\+A\+BR}} (\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ABR_8c_acc77563e81a137bd17eb93ae6b76f366}\label{ABR_8c_acc77563e81a137bd17eb93ae6b76f366}} 
+\index{ABR.c@{ABR.c}!ajouter\_fd@{ajouter\_fd}}
+\index{ajouter\_fd@{ajouter\_fd}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{ajouter\_fd()}{ajouter\_fd()}}
+{\footnotesize\ttfamily void ajouter\+\_\+fd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a,  }\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Ajoute un fils droit au chainon mis en parametre. 
+
+\mbox{\Hypertarget{ABR_8c_a6b6a162f7fd1ab87313529724855f3ba}\label{ABR_8c_a6b6a162f7fd1ab87313529724855f3ba}} 
+\index{ABR.c@{ABR.c}!ajouter\_fg@{ajouter\_fg}}
+\index{ajouter\_fg@{ajouter\_fg}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{ajouter\_fg()}{ajouter\_fg()}}
+{\footnotesize\ttfamily void ajouter\+\_\+fg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a,  }\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Ajoute un fils gauche au chainon mis en parametre. 
+
+\mbox{\Hypertarget{ABR_8c_af433ce40199c7b9808834be39cb3b85d}\label{ABR_8c_af433ce40199c7b9808834be39cb3b85d}} 
+\index{ABR.c@{ABR.c}!chercherHash@{chercherHash}}
+\index{chercherHash@{chercherHash}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{chercherHash()}{chercherHash()}}
+{\footnotesize\ttfamily int$\ast$ chercher\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a,  }\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+Recherche dans le tableau\mbox{\Hypertarget{ABR_8c_aa566ca95fe487cc15c6c1103f13b38df}\label{ABR_8c_aa566ca95fe487cc15c6c1103f13b38df}} 
+\index{ABR.c@{ABR.c}!creerArbre@{creerArbre}}
+\index{creerArbre@{creerArbre}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{creerArbre()}{creerArbre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} creer\+Arbre (\begin{DoxyParamCaption}\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Fonction permetant de creer le noeud d\textquotesingle{}un arbre et de retourner son adresse. 
+
+Déclaration des fonctions. Création liste\mbox{\Hypertarget{ABR_8c_ac52400bec0a00dcbb756bf91b24ae2a4}\label{ABR_8c_ac52400bec0a00dcbb756bf91b24ae2a4}} 
+\index{ABR.c@{ABR.c}!desteroyABR@{desteroyABR}}
+\index{desteroyABR@{desteroyABR}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{desteroyABR()}{desteroyABR()}}
+{\footnotesize\ttfamily void desteroy\+A\+BR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+Méthode qui enlève tous les noeuds d\textquotesingle{}un arbre \mbox{\Hypertarget{ABR_8c_a60a1f0791769bd6d9ca8c4830b2b3853}\label{ABR_8c_a60a1f0791769bd6d9ca8c4830b2b3853}} 
+\index{ABR.c@{ABR.c}!existe\_fd@{existe\_fd}}
+\index{existe\_fd@{existe\_fd}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{existe\_fd()}{existe\_fd()}}
+{\footnotesize\ttfamily bool existe\+\_\+fd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Retourne l\textquotesingle{}existance d\textquotesingle{}un fils droit. 
+
+\mbox{\Hypertarget{ABR_8c_a8ac8dc0fe9ede8a6d801dae5b0a0b7b1}\label{ABR_8c_a8ac8dc0fe9ede8a6d801dae5b0a0b7b1}} 
+\index{ABR.c@{ABR.c}!existe\_fg@{existe\_fg}}
+\index{existe\_fg@{existe\_fg}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{existe\_fg()}{existe\_fg()}}
+{\footnotesize\ttfamily bool existe\+\_\+fg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Retourne l\textquotesingle{}existance d\textquotesingle{}un fils gauche. 
+
+\mbox{\Hypertarget{ABR_8c_a56a5ef99b4641a95e0b6508042e9f00d}\label{ABR_8c_a56a5ef99b4641a95e0b6508042e9f00d}} 
+\index{ABR.c@{ABR.c}!insertion\_ABR@{insertion\_ABR}}
+\index{insertion\_ABR@{insertion\_ABR}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{insertion\_ABR()}{insertion\_ABR()}}
+{\footnotesize\ttfamily int insertion\+\_\+\+A\+BR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} $\ast$}]{a\+Pt,  }\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Insert dans l\textquotesingle{}abr, si le hash existe déja, n\textquotesingle{}ajoute a la liste Retourne \+: 0 si la valeur a été ajouté 1 si la valeur n\textquotesingle{}a pas été ajouté car elle est déjà présente 2 si a\+Pt vaut N\+U\+LL 3 si key vaut N\+U\+LL On compare toutes les premier champs\mbox{\Hypertarget{ABR_8c_ac5ef8ef64f1aa1aba56e32ed4f98664b}\label{ABR_8c_ac5ef8ef64f1aa1aba56e32ed4f98664b}} 
+\index{ABR.c@{ABR.c}!parcour\_infixe@{parcour\_infixe}}
+\index{parcour\_infixe@{parcour\_infixe}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{parcour\_infixe()}{parcour\_infixe()}}
+{\footnotesize\ttfamily void parcour\+\_\+infixe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Fonction permetant de retourner les valeurs de l\textquotesingle{}arbre de façon croissante. 
+
+\mbox{\Hypertarget{ABR_8c_a8b97b1431160ee00d9fd272405dc20f1}\label{ABR_8c_a8b97b1431160ee00d9fd272405dc20f1}} 
+\index{ABR.c@{ABR.c}!parcour\_infixe\_debug@{parcour\_infixe\_debug}}
+\index{parcour\_infixe\_debug@{parcour\_infixe\_debug}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{parcour\_infixe\_debug()}{parcour\_infixe\_debug()}}
+{\footnotesize\ttfamily void parcour\+\_\+infixe\+\_\+debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Fonction permetant de retourner les valeurs de l\textquotesingle{}arbre de façon croissante. 
+
+\mbox{\Hypertarget{ABR_8c_a942fd6bea8d822c57cc952ed353484dd}\label{ABR_8c_a942fd6bea8d822c57cc952ed353484dd}} 
+\index{ABR.c@{ABR.c}!supprimerNoeud@{supprimerNoeud}}
+\index{supprimerNoeud@{supprimerNoeud}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{supprimerNoeud()}{supprimerNoeud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} supprimer\+Noeud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+Cette fonction retire la racine de l\textquotesingle{}arbre passé en paramètre Retourne le nouvel arbre On vide la liste de clef/valeur
+
+Feuille
+
+Fils gauche seulement
+
+F\+Ils droit seulement
+
+Deux fils
+
+On cherche le plus petit fils droit
+
+Si c\textquotesingle{}est le fils droite de a\mbox{\Hypertarget{ABR_8c_a11739bb4e98cd8d6ccb6b30ff2425530}\label{ABR_8c_a11739bb4e98cd8d6ccb6b30ff2425530}} 
+\index{ABR.c@{ABR.c}!supression\_hash\_ABR@{supression\_hash\_ABR}}
+\index{supression\_hash\_ABR@{supression\_hash\_ABR}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{supression\_hash\_ABR()}{supression\_hash\_ABR()}}
+{\footnotesize\ttfamily int supression\+\_\+hash\+\_\+\+A\+BR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}} $\ast$}]{a\+Pt,  }\item[{unsigned long}]{hash,  }\item[{char $\ast$}]{key }\end{DoxyParamCaption})}
+
+Fonction permetant de supprimer un clef a partir de son hash Si la clef n\textquotesingle{}est pas trouvé ou vaut N\+U\+LL retourne N\+U\+LL Sinon retourne l\textquotesingle{}arbre avec la clef retiré On notera que cette fonction ne retire pas de noeuds si il existe une deuxième clef avec le même hash dans l\textquotesingle{}arbre Retourne \+: 0 si la clef a pu être supprimer 1 si la clef n\textquotesingle{}a pas été supprimé 2 si a vaut N\+U\+LL 3 si key vaut N\+U\+LL Vérification il n\textquotesingle{}y pas d\textquotesingle{}element, ce n\textquotesingle{}est pas normal, on retire le noeud
+
+Il n\textquotesingle{}y a qu\textquotesingle{}un element dans la liste si c\textquotesingle{}est le bon on le supprime
+
+Il y a plus d\textquotesingle{}un element, on le retire de la liste
+
+Ici on ne prends pas en compte les erreurs, on ne veut que 0 ou 1 Si la valeur de retour vaut 0, on retourne 0 Sinon on retourne 1\mbox{\Hypertarget{ABR_8c_abddfd28e64ef17484ab2d964932de6a0}\label{ABR_8c_abddfd28e64ef17484ab2d964932de6a0}} 
+\index{ABR.c@{ABR.c}!traiter\_noeud@{traiter\_noeud}}
+\index{traiter\_noeud@{traiter\_noeud}!ABR.c@{ABR.c}}
+\doxysubsubsection{\texorpdfstring{traiter\_noeud()}{traiter\_noeud()}}
+{\footnotesize\ttfamily void traiter\+\_\+noeud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ABR_8h_aebbdfd8c0a163a20e1e28f05612ac1e6}{p\+Arbre}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Affiche un noeud specifique de l\textquotesingle{}arbre de la meme maniere qu\textquotesingle{}une liste. 
+
